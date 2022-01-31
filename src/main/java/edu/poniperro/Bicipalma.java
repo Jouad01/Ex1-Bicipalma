@@ -1,6 +1,7 @@
 package edu.poniperro;
 
 
+import edu.poniperro.bicicleta.Bicicleta;
 import edu.poniperro.estacion.Estacion;
 
 /**
