@@ -1,7 +1,7 @@
 package edu.poniperro;
 
 
-import Tarjeta_Usuario.TarjetaUsuario;
+import edu.poniperro.Tarjeta_Usuario.TarjetaUsuario;
 import edu.poniperro.bicicleta.Bicicleta;
 import edu.poniperro.estacion.Estacion;
 
@@ -57,7 +57,7 @@ public class Bicipalma {
 
             System.out.println("\n **** caso TEST retirar bicicleta **** \n");
 
-            TarjetaUsuario tarjetaUsuario = new TarjetaUsuario("000456789", true);
+            TarjetaUsuario tarjetaUsuario = new TarjetaUsuario("123456789", true);
 
             System.out.println("¿tarjeta de usuario activada? (true/false): " + estacion.leerTarjetaUsuario(tarjetaUsuario) );
 

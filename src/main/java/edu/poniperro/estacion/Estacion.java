@@ -1,8 +1,9 @@
 package edu.poniperro.estacion;
 
-import Tarjeta_Usuario.TarjetaUsuario;
+import edu.poniperro.Tarjeta_Usuario.TarjetaUsuario;
 import edu.poniperro.bicicleta.Bicicleta;
 
+// Libreria para generar un numero aleatorio
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Estacion {
@@ -10,7 +11,7 @@ public class Estacion {
     private final int id;
     private final String direccion;
     private final int numAnclajes;
-    private final Bicicleta[] anclajes;
+    private final Bicicleta[] anclajes; // Array
 
     public Estacion(int id, String direccion, int numAnclajes) {
         this.direccion = direccion;
@@ -18,9 +19,9 @@ public class Estacion {
         this.numAnclajes = numAnclajes;
         this.anclajes = new Bicicleta[numAnclajes];
     }
-
+    // Imprime lo que pide main
     public void consultarEstacion() {
-        String text = "id: " + this.id + "\ndireccion: " + "\nnumeroAnclajes" + this.numAnclajes;
+        String text = "id: " + this.id + "\nDireccion: " + "\nnumeroAnclajes" + this.numAnclajes;
         System.out.println(text);
     }
 
@@ -28,15 +29,16 @@ public class Estacion {
         int anclajesLibres = 0;
         for (Bicicleta anclaje : this.anclajes) {
             if (anclaje == null){
-                anclajesLibres += 1;
+                anclajesLibres += 1; // Si no hay anclaje se añade uno
             }
         }
         return anclajesLibres;
     }
 
     private void mostrarAnclajes(Bicicleta bicicleta, int numAnclajes) {
-        System.out.println("Bicicleta: " + bicicleta + "anclada en el anclaje" + (numAnclajes + 1));
+        System.out.println("Bicicleta: " + bicicleta + " " + "anclada en el anclaje: " + (numAnclajes + 1));
     }
+
 
     public void anclarBicicleta(Bicicleta bicicleta) {
         for (int posicionAnclaje = 0; posicionAnclaje < numAnclajes; posicionAnclaje++) {
@@ -52,9 +54,9 @@ public class Estacion {
         String text = "";
         for (int posicionAnclaje = 0; posicionAnclaje < numAnclajes; posicionAnclaje++) {
             if (anclajes[posicionAnclaje] == null) {
-                text += "Anclaje " + (posicionAnclaje + 1) + "libre\n";
+                text += "Anclaje " + (posicionAnclaje + 1) + " " + "libre\n";
             } else {
-                text += "Anclaje " + (posicionAnclaje + 1) + " " + anclajes[posicionAnclaje] + "\n";
+                text += "Anclaje " + " " + (posicionAnclaje + 1) + " " + anclajes[posicionAnclaje] + "\n";
             }
         }
         System.out.println(text);
