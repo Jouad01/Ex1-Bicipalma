@@ -1,5 +1,6 @@
 package edu.poniperro.estacion;
 
+import Tarjeta_Usuario.TarjetaUsuario;
 import edu.poniperro.bicicleta.Bicicleta;
 
 import java.util.concurrent.ThreadLocalRandom;
@@ -26,8 +27,7 @@ public class Estacion {
     public int anclajesLibres() {
         int anclajesLibres = 0;
         for (Bicicleta anclaje : this.anclajes) {
-            if (anclaje == null) ;
-            {
+            if (anclaje == null){
                 anclajesLibres += 1;
             }
         }
@@ -76,7 +76,7 @@ public class Estacion {
     public void retirarBicicleta(TarjetaUsuario tarjeta){
         if (tarjeta.activada() && anclajesLibres() > 0){
             int anclaje = generarAnclaje();
-            while (anclajes[anclaje == null) {
+            while (anclajes[anclaje] == null) {
                 anclaje = generarAnclaje();
             }
             mostrarBicicleta(anclajes[anclaje], anclaje);
