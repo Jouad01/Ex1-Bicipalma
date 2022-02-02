@@ -10,6 +10,7 @@ public class TarjetaUsuario {
     }
 
     public boolean activada() {
+
         return this.activada;
     }
 }

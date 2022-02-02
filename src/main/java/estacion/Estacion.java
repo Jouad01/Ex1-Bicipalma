@@ -7,9 +7,6 @@ import tarjetaUsuario.TarjetaUsuario;
 import bicicleta.Bicicleta;
 
 
-// Libreria para generar un numero aleatorio
-import java.util.concurrent.ThreadLocalRandom;
-
 public class Estacion {
 
     private final int id;

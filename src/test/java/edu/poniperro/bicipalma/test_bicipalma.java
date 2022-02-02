@@ -10,9 +10,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 
-import org.junit.Before;
-import org.junit.Test;
-
 public class test_bicipalma {
 
     Estacion estacion;
