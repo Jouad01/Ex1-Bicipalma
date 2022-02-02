@@ -1,4 +1,4 @@
-package edu.poniperro.Tarjeta_Usuario;
+package tarjetaUsuario;
 
 public class TarjetaUsuario {
     private final String id;

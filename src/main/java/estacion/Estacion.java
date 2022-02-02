@@ -1,7 +1,11 @@
-package edu.poniperro.estacion;
+package estacion;
 
-import edu.poniperro.Tarjeta_Usuario.TarjetaUsuario;
-import edu.poniperro.bicicleta.Bicicleta;
+// Libreria para generar un numero aleatorio
+import java.util.concurrent.ThreadLocalRandom;
+
+import tarjetaUsuario.TarjetaUsuario;
+import bicicleta.Bicicleta;
+
 
 // Libreria para generar un numero aleatorio
 import java.util.concurrent.ThreadLocalRandom;
@@ -45,7 +49,7 @@ public class Estacion {
             if (anclajes[posicionAnclaje] == null) {
                 anclajes[posicionAnclaje] = bicicleta;
                 mostrarAnclajes(bicicleta, posicionAnclaje);
-                break;
+                break; // Una vez se añade bicicleta deja de buscar espacios vacios
             }
         }
     }

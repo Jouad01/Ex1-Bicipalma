@@ -1,10 +1,15 @@
-package edu.poniperro;
+package edu.poniperro.bicipalma;
 
 import static org.junit.Assert.*;
 
-import edu.poniperro.Tarjeta_Usuario.TarjetaUsuario;
-import edu.poniperro.bicicleta.Bicicleta;
-import edu.poniperro.estacion.Estacion;
+import tarjetaUsuario.TarjetaUsuario;
+import bicicleta.Bicicleta;
+import estacion.Estacion;
+
+import org.junit.Before;
+import org.junit.Test;
+
+
 import org.junit.Before;
 import org.junit.Test;
 

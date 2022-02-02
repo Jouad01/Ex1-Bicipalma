@@ -1,4 +1,4 @@
-package edu.poniperro.bicicleta;
+package bicicleta;
 
 public interface Movil {
     int getId();
