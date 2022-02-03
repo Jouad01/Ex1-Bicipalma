@@ -1,4 +1,4 @@
-# Ex1-Bicipalmaç
+# Ex1-Bicipalma
 
 ## Diagrama UML (Provisional)
 
