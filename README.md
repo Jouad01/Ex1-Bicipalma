@@ -1,1 +1,5 @@
-# Ex1-Bicipalma
+# Ex1-Bicipalmaç
+
+## Diagrama UML (Provisional)
+
+![](DiagramaUML.jpg)
