@@ -3,6 +3,7 @@ package bicicleta;
 public class Bicicleta implements Movil {
     private final int id;
     public Bicicleta(int id) {
+
         this.id = id;
     }
 
@@ -14,6 +15,7 @@ public class Bicicleta implements Movil {
 
     @Override
     public String toString(){
+
         return Integer.toString(getId());
     }
 }

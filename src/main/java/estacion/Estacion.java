@@ -22,7 +22,7 @@ public class Estacion {
     }
     // Imprime lo que pide main
     public void consultarEstacion() {
-        String text = "id: " + this.id + "\nDireccion: " + "\nnumeroAnclajes" + this.numAnclajes;
+        String text = "id: " + this.id + "\nDireccion " + "\nnumeroAnclajes" + " " + this.numAnclajes;
         System.out.println(text);
     }
 
@@ -64,6 +64,7 @@ public class Estacion {
     }
 
     public boolean leerTarjetaUsuario(TarjetaUsuario tarjeta){
+
         return tarjeta.activada();
     }
 

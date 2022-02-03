@@ -5,7 +5,7 @@ public class TarjetaUsuario {
     private boolean activada = false;
 
     public TarjetaUsuario(String id, boolean activada) {
-        this.id =id;
+        this.id = id;
         this.activada = activada;
     }
 

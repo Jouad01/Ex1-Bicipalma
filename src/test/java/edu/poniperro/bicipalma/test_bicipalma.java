@@ -2,6 +2,7 @@ package edu.poniperro.bicipalma;
 
 import static org.junit.Assert.*;
 
+import org.junit.BeforeClass;
 import tarjetaUsuario.TarjetaUsuario;
 import bicicleta.Bicicleta;
 import estacion.Estacion;
